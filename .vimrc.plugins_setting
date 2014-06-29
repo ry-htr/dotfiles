@@ -1,0 +1,49 @@
+"------------------------------------
+" vim filer.vim
+"------------------------------------
+let g:vimfiler_as_default_explorer = 1
+autocmd VimEnter * VimFilerExplorer
+
+"------------------------------------
+" taglist.Vim
+"------------------------------------
+" 関数一覧
+"set tags=tags
+let Tlist_Ctags_Cmd = "/usr/local/bin/ctags" "ctagsのパス
+let Tlist_Show_One_File = 1                  " 現在編集中のソースのタグしか表示しない
+let Tlist_Exit_OnlyWindow = 1                " taglistのウィンドーが最後のウィンドーならばVimを閉じる
+let Tlist_Use_Right_Window = 1               " 右側でtaglistのウィンドーを表示
+let Tlist_Enable_Fold_Column = 1             " 折りたたみ
+let Tlist_Auto_Open = 1                      " 自動表示
+let Tlist_Auto_Update = 1
+let Tlist_WinWidth = 30
+nmap <F7> :CMiniBufExplorer<CR>:TrinityToggleTagList<CR>:TMiniBufExplorer<CR>
+nmap <Leader>tl :CMiniBufExplorer<CR>:TrinityToggleTagList<CR>:TMiniBufExplorer<CR>
+
+"------------------------------------
+" neocomplete.vim
+"------------------------------------
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+" Define dictionary.
+let g:neocomplete#sources#dictionary#dictionaries = {
+	\ 'default' : '',
+    \ 'vimshell' : $HOME.'/.vimshell_hist',
+    \ 'scala' : $HOME.'/.vim/bundle/vim-scala/dict/scala.dict',
+    \ 'java' : $HOME.'/.vim/dict/java.dict',
+    \ 'c' : $HOME.'/.vim/dict/c.dict',
+    \ 'cpp' : $HOME.'/.vim/dict/cpp.dict',
+    \ 'javascript' : $HOME.'/.vim/dict/javascript.dict',
+    \ 'ocaml' : $HOME.'/.vim/dict/ocaml.dict',
+    \ 'perl' : $HOME.'/.vim/dict/perl.dict',
+    \ 'php' : $HOME.'/.vim/dict/php.dict',
+    \ 'scheme' : $HOME.'/.vim/dict/scheme.dict',
+    \ 'vm' : $HOME.'/.vim/dict/vim.dict'
+    \ }
+
+
+"noecomplete-php.vim
+let g:neocomplete_php_locale = 'ja'
