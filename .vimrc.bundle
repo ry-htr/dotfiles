@@ -41,6 +41,9 @@ NeoBundle 'Shougo/vimproc', {
    \    },
    \ }
 
+"--------------------------"
+" unite.vim"
+"--------------------------"
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'tsukkee/unite-help'
 NeoBundle 'h1mesuke/unite-outline'
@@ -48,6 +51,9 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'thinca/vim-unite-history'
 NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'choplin/unite-vim_hacks'
+NeoBundle 'oppara/vim-unite-cake'
+NeoBundle 'heavenshell/unite-zf'
+
 
 NeoBundle 'tpope/vim-surround'
 
@@ -60,6 +66,8 @@ NeoBundle 'taglist.vim'
 "NeoBundle 'The-NERD-tree'
 
 NeoBundle 'scrooloose/syntastic'
+
+NeoBundle 'tomtom/tcomment_vim'
 
 "typescript
 NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
