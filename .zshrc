@@ -29,3 +29,6 @@ source $HOME/dotfiles/.zshrc.peco.zsh
 
 # source phpbrew
 source $HOME/.phpbrew/bashrc
+
+# hub
+eval "$(hub alias -s)"
