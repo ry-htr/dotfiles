@@ -34,3 +34,8 @@ p() {
     peco | while read LINE; do $@ $LINE; done
 }
 alias e='ghq list -p | p cd'
+
+# agで絞ってvimで開く
+function agvim () {
+  vim $(ag $@ | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+}
