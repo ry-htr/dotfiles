@@ -73,6 +73,8 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
 NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
 
+NeoBundle 'rking/ag.vim'
+
 call neobundle#end()
 
 " Required:
