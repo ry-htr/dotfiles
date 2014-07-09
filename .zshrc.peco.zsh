@@ -36,6 +36,6 @@ p() {
 alias e='ghq list -p | p cd'
 
 # agで絞ってvimで開く
-function agvim () {
-  vim $(ag $@ | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+function ptvim () {
+  vim $(pt $@ | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
 }
