@@ -75,6 +75,13 @@ NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
 
 NeoBundle 'rking/ag.vim'
 
+NeoBundle 'mattn/emmet-vim'
+
+NeoBundle 'Townk/vim-autoclose'
+
+" 類語を検索
+NeoBundle 'koron/codic-vim'
+
 call neobundle#end()
 
 " Required:

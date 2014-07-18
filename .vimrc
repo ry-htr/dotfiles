@@ -1,29 +1,29 @@
 "プラグインの読み込み"
-source ~/dotfiles/.vimrc.bundle
+source ~/dotfiles/vim/.vimrc.bundle
 
 "プラグイン設定
-source ~/dotfiles/.vimrc.plugins_setting
+source ~/dotfiles/vim/.vimrc.plugins_setting
 
 " base settings
-source ~/dotfiles/.vimrc.basic
+source ~/dotfiles/vim/.vimrc.basic
 
 "StatusLine設定
-source ~/dotfiles/.vimrc.statusline
+source ~/dotfiles/vim/.vimrc.statusline
 
 "インデント設定
-source ~/dotfiles/.vimrc.indent
+source ~/dotfiles/vim/.vimrc.indent
 
 "補完関連
-"source ~/dotfiles/.vimrc.completion
+"source ~/dotfiles/vim/.vimrc.completion
 
 "表示関連
-source ~/dotfiles/.vimrc.apperance
+source ~/dotfiles/vim/.vimrc.apperance
 
 "Tags関連
-source ~/dotfiles/.vimrc.tags
+source ~/dotfiles/vim/.vimrc.tags
 
 "検索関連
-source ~/dotfiles/.vimrc.search
+source ~/dotfiles/vim/.vimrc.search
 
 "
-source ~/dotfiles/.vimrc.colors
+source ~/dotfiles/vim/.vimrc.colors
