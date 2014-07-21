@@ -32,3 +32,4 @@ source $HOME/.phpbrew/bashrc
 
 # hub
 eval "$(hub alias -s)"
+eval "$(rbenv init -)"
