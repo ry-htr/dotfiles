@@ -22,10 +22,14 @@ alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
 # go setting
-source $HOME/dotfiles/.zshrc.go
+source $HOME/dotfiles/zsh/.zshrc.go
 
 # peco search
-source $HOME/dotfiles/.zshrc.peco.zsh
+source $HOME/dotfiles/zsh/.zshrc.peco.zsh
+
+# other .zsh files
+source $HOME/dotfiles/zsh/.zshrc.alias
+source $HOME/dotfiles/zsh/.zshrc.functions
 
 # source phpbrew
 source $HOME/.phpbrew/bashrc
@@ -33,3 +37,6 @@ source $HOME/.phpbrew/bashrc
 # hub
 eval "$(hub alias -s)"
 eval "$(rbenv init -)"
+
+
+fpath=(/usr/local/share/zsh-completions $fpath)

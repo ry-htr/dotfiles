@@ -1,0 +1,11 @@
+alias 'md'='vim ./*.md'
+
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+alias sha1='echo -n "${1}" | openssl sha1 | sed "s/^.* //"'
+
+alias up="cd ..; ls -l"
+
+alias ssheuc='TERM=xterm cocot -t UTF-8 -p EUC-JP ssh '
+
+# for mac
+alias f="open ."
