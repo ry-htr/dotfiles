@@ -40,3 +40,5 @@ eval "$(rbenv init -)"
 
 
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+export TERM=xterm-256color

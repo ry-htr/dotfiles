@@ -90,6 +90,8 @@ NeoBundle 'vim-scripts/tagbar-phpctags', {
   \   },
   \ }
 
+"NeoBundle 'itchyny/lightline.vim'
+
 call neobundle#end()
 
 " Required:
