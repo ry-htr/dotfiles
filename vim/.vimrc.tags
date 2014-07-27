@@ -1,35 +1,63 @@
 "-------------------------------------------------------------------------------
 " タグ関連 Tags
 "-------------------------------------------------------------------------------
-" set tags
-"if has("autochdir")
-  " 編集しているファイルのディレクトリに自動で移動
+# tagbar setting
+let g:tagbar_type_css = {
+\ 'ctagstype' : 'Css',
+    \ 'kinds'     : [
+        \ 'c:classes',
+        \ 's:selectors',
+        \ 'i:identities'
+    \ ]
+\ }
 
-  "set autochdir
-  "set tags=tags;
-"else
-  "set tags=./tags,./../tags,./*/tags,./../../tags,./../../../tags,./../../../../tags,./../../../../../tags
-"endif
+let g:tagbar_type_go = {
+    \ 'ctagstype': 'go',
+    \ 'kinds' : [
+        \'p:package',
+        \'f:function',
+        \'v:variables',
+        \'t:type',
+        \'c:const'
+    \]
+\}
 
-"set notagbsearch
+let g:tagbar_type_javascript = {
+    \ 'ctagsbin' : '/path/to/jsctags'
+\ }
 
-"<C-t>はscreentとかぶるので削除
-"tab pagesを使い易くする
-" nnoremap <C-t>  <Nop>
-" nnoremap <C-t>n  ;<C-u>tabnew<CR>
-" nnoremap <C-t>c  ;<C-u>tabclose<CR>
-" nnoremap <C-t>o  ;<C-u>tabonly<CR>
-" nnoremap <C-t>j  ;<C-u>execute 'tabnext' 1 + (tabpagenr() + v:count1 - 1) % tabpagenr('$')<CR>
-" nnoremap <C-t>k  gT
+let g:tagbar_type_markdown = {
+    \ 'ctagstype' : 'markdown',
+    \ 'kinds' : [
+        \ 'h:Heading_L1',
+        \ 'i:Heading_L2',
+        \ 'k:Heading_L3'
+    \ ]
+\ }
 
-"tags-and-searchesを使い易くする
-"nnoremap t  <Nop>
-"「飛ぶ」
-"nnoremap tt  <C-]>
-"「進む」
-"nnoremap tj  ;<C-u>tag<CR>
-"「戻る」
-"nnoremap tk  ;<C-u>pop<CR>
-"履歴一覧
-"nnoremap tl  ;<C-u>tags<CR>
+let g:tagbar_type_ruby = {
+    \ 'kinds' : [
+        \ 'm:modules',
+        \ 'c:classes',
+        \ 'd:describes',
+        \ 'C:contexts',
+        \ 'f:methods',
+        \ 'F:singleton methods'
+    \ ]
+\ }
 
+let g:tagbar_type_scala = {
+    \ 'ctagstype' : 'Scala',
+    \ 'kinds'     : [
+        \ 'p:packages:1',
+        \ 'V:values',
+        \ 'v:variables',
+        \ 'T:types',
+        \ 't:traits',
+        \ 'o:objects',
+        \ 'a:aclasses',
+        \ 'c:classes',
+        \ 'r:cclasses',
+        \ 'm:methods'
+    \ ]
+\ }
