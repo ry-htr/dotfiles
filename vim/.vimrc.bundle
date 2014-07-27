@@ -82,6 +82,14 @@ NeoBundle 'Townk/vim-autoclose'
 " 類語を検索
 NeoBundle 'koron/codic-vim'
 
+NeoBundle 'majutsushi/tagbar'
+
+NeoBundle 'vim-scripts/tagbar-phpctags', {
+  \   'build' : {
+  \     'others' : 'chmod +x bin/phpctags',
+  \   },
+  \ }
+
 call neobundle#end()
 
 " Required:
