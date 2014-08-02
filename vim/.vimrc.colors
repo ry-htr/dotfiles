@@ -27,3 +27,5 @@ hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg
 if !has('gui_running')
   set t_Co=256
 endif
+
+colorscheme dark
