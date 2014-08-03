@@ -4,6 +4,10 @@ upgrade
 tap phinze/homebrew-cask
 install brew-cask
 
+tap motemen/ghq
+install ghq
+
+
 tap sanemat/font
 install ricty
 
@@ -52,3 +56,4 @@ cask install iterm2
 cask install github
 cask install sourcetree
 cask install evernote
+cask install flux

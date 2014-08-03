@@ -30,10 +30,9 @@ bindkey '^@' peco-cdr
 
 
 # ghq
-p() {
-    peco | while read LINE; do $@ $LINE; done
-}
 alias e='ghq list -p | p cd'
+alias gh='gh-open $(ghq list -p | peco)'
+
 
 # agで絞ってvimで開く
 function ptvim () {
