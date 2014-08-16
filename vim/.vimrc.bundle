@@ -44,53 +44,65 @@ NeoBundle 'Shougo/vimproc', {
 "--------------------------"
 " unite.vim"
 "--------------------------"
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'tsukkee/unite-help'
-NeoBundle 'h1mesuke/unite-outline'
-NeoBundle 'basyura/unite-rails'
-NeoBundle 'thinca/vim-unite-history'
-NeoBundle 'tsukkee/unite-tag'
-NeoBundle 'choplin/unite-vim_hacks'
-NeoBundle 'oppara/vim-unite-cake'
-NeoBundle 'heavenshell/unite-zf'
+  NeoBundle 'Shougo/unite.vim'
+  NeoBundle 'tsukkee/unite-help'
+  NeoBundle 'h1mesuke/unite-outline'
+  NeoBundle 'basyura/unite-rails'
+  NeoBundle 'thinca/vim-unite-history'
+  NeoBundle 'tsukkee/unite-tag'
+  NeoBundle 'choplin/unite-vim_hacks'
+  NeoBundle 'oppara/vim-unite-cake'
+  NeoBundle 'heavenshell/unite-zf'
+  NeoBundle 'basyura/unite-rails'
 
 
-NeoBundle 'tpope/vim-surround'
+  NeoBundle 'tpope/vim-surround'
 
-NeoBundle 'thinca/vim-quickrun'
+  NeoBundle 'thinca/vim-quickrun'
 
-NeoBundle 'thinca/vim-ref'
+  " perldocやphpmanual等のリファレンスをvim上で見る
+  NeoBundle 'thinca/vim-ref'
 
-NeoBundle 'taglist.vim'
+  " ソースコード上のメソッド宣言、変数宣言の一覧を表示
+  NeoBundle 'taglist.vim'
 
-"NeoBundle 'The-NERD-tree'
+  NeoBundle 'scrooloose/syntastic'
 
-NeoBundle 'scrooloose/syntastic'
+  NeoBundle 'tomtom/tcomment_vim'
 
-NeoBundle 'tomtom/tcomment_vim'
+  "typescript
+  NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
+  NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
 
-"typescript
-NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
-NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
+  NeoBundle 'rking/ag.vim'
 
-NeoBundle 'rking/ag.vim'
+  NeoBundle 'mattn/emmet-vim'
 
-NeoBundle 'mattn/emmet-vim'
+  NeoBundle 'Townk/vim-autoclose'
 
-NeoBundle 'Townk/vim-autoclose'
+  " 類語を検索
+  NeoBundle 'koron/codic-vim'
 
-" 類語を検索
-NeoBundle 'koron/codic-vim'
+  NeoBundle 'majutsushi/tagbar'
 
-NeoBundle 'majutsushi/tagbar'
+  NeoBundle 'vim-scripts/tagbar-phpctags', {
+    \   'build' : {
+    \     'others' : 'chmod +x bin/phpctags',
+    \   },
+    \ }
 
-NeoBundle 'vim-scripts/tagbar-phpctags', {
-  \   'build' : {
-  \     'others' : 'chmod +x bin/phpctags',
-  \   },
-  \ }
+  "NeoBundle 'itchyny/lightline.vim'
 
-"NeoBundle 'itchyny/lightline.vim'
+  " rails.vim : rails的なアレ
+  NeoBundle 'tpope/vim-rails'
+
+  " Pydiction : Python用の入力補完
+  NeoBundle 'Pydiction'
+
+  " markdown
+  NeoBundle 'tpope/vim-markdown'
+
+  NeoBundle 'cohama/agit.vim'
 
 call neobundle#end()
 

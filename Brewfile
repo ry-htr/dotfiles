@@ -37,6 +37,9 @@ install w3m
 install wget
 install z
 install zsh-completions
+install colordiff
+install dfc
+install htop
 
 cask install virtualbox
 cask install vagrant
