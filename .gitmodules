@@ -1,9 +1,14 @@
 [submodule "emacs.d"]
 	path = emacs.d
 	url = https://github.com/clear-code/emacs.d.git
+	ignore = dirty
 [submodule "zsh.d"]
 	path = zsh.d
 	url = https://github.com/clear-code/zsh.d.git
+	ignore = dirty
 [submodule "zaw"]
 	path = zaw
 	url = https://github.com/zsh-users/zaw.git
+	ignore = dirty
+[zaw]
+	ignore = dirty
